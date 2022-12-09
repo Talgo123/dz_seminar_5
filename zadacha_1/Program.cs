@@ -14,12 +14,6 @@ int[] FillArrayWithRandomNumbers(int size, int leftRange, int rightRange)
     }
     return arr;
 }
-int size = 5;
-int leftRange = 100;
-int rightRange = 999;
-int[] array = new int[size];
-array = FillArrayWithRandomNumbers(size, leftRange, rightRange);
-System.Console.WriteLine('[' + string.Join(",", array) + ']');
 
 int AmountEvenNumbers(int[] arr)
 {
@@ -33,6 +27,13 @@ int AmountEvenNumbers(int[] arr)
     }
     return count;
 }
+
+int size = 5;
+int leftRange = 100;
+int rightRange = 999;
+int[] array = new int[size];
+array = FillArrayWithRandomNumbers(size, leftRange, rightRange);
+System.Console.WriteLine('[' + string.Join(",", array) + ']');
 
 int number = AmountEvenNumbers(array);
 System.Console.WriteLine(number);
